@@ -1,0 +1,20 @@
+<h2>All Employees</h2>
+<table border="1" cellpadding="8">
+    <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Salary</th>
+        <th>Department</th>
+        <th>Joining Date</th>
+    </tr>
+
+    {%for e in emp %}
+    <tr>
+        <td>{{ e.Name }}</td>
+        <td>{{ e.Address }}</td>
+        <td>{{ e.Salary }}</td>
+        <td>{{ e.Depart_Name }}</td>
+        <td>{{ e.join_Date }}</td>
+    </tr>
+    {% endfor %}
+</table>

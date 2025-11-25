@@ -1,0 +1,27 @@
+<h2 style="text-align:center;">Employee Details</h2>
+
+<table border="2" cellspacing="0" cellpadding="8" style="width:70%; margin:auto;">
+    <tr style="background:#f2f2f2; font-weight:bold;">
+        <th>ID</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Salary</th>
+        <th>Department</th>
+        <th>Join Date</th>
+    </tr>
+
+    {% for emp in emp %}
+    <tr>
+        <td>{{ emp.id }}</td>
+        <td>{{ emp.Name }}</td>
+        <td>{{ emp.Address }}</td>
+        <td>{{ emp.Salary }}</td>
+        <td>{{ emp.Depart_Name }}</td>
+        <td>{{ emp.join_Date }}</td>
+    </tr>
+    {% empty %}
+    <tr>
+        <td colspan="6" style="text-align:center;">No records found</td>
+    </tr>
+    {% endfor %}
+</table>
