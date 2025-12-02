@@ -1,0 +1,30 @@
+{% include 'header.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body style="background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230705/pngtree-online-education-3d-render-of-a-computer-on-a-wooden-table-image_3792188.jpg');
+              background-size:cover;
+              text-align:center;
+              color:aliceblue;
+              
+             ">
+
+       <h2> 
+       <p style="font-size:xx-large;
+       height: 60vh;
+              display :flex;
+              justify-content:center;
+              align-items:center">
+              You are successfully logged in.<br>
+        {{Name}} well-come to Home Page<hr>
+
+              
+            <a href="{% url 'logout' %}">Logout</a>
+              {% include 'footer.html' %}  
+
+</body>
+</html>
