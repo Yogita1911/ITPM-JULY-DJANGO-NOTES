@@ -1,0 +1,13 @@
+{% for p in Pro %}
+    {% if  p.Product_image %}
+        <img src = '{{ p.Product_image.url}}'
+            width = '100'
+            hight = '100'
+         alt = 'Product_image'>
+    {% endif %}
+     <li>
+        {{p.Name}}<br>
+        {{p.Description}}<br>
+        {{p.Price}}</li><hr>
+
+{%endfor %}        
